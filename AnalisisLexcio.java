@@ -7,7 +7,7 @@ public class AnalisisLexcio{
         String[] lexemas = archivo.leerArchivoTxt("C:\\Users\\jdvil\\OneDrive\\Escritorio\\7. SEMESTRE\\COPILADORES\\MODULO 1\\codigotxt\\archivo.txt");
 
         /*System.out.println("Lexemas encontrados:");
-        for (String lexema : lexemas) {
+        for (String lexema : lexemas) {   
             // Limpiamos caracteres no deseados
             lexema = lexema.replaceAll("[^a-zA-Z0-9=+\\*//*()\\-]", "");
 

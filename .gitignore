@@ -1,4 +1,6 @@
-# Ignorar archivos innecesarios
-*.log
-*.json
+# Ignorar archivos de VS Code
 .vscode/
+*.log
+*.pyc
+__pycache__/
+node_modules/
