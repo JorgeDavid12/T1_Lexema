@@ -64,7 +64,9 @@ class Archivo{
             System.err.println("no se encontro el archivo mula");
         }
         //return texto.split("\\s+");
-        return texto.split("(?=[;(){}])|\\s+");
+        //return texto.split("(?=[;(){}])|\\s+");
+        //return texto.split("(?=[-+*/=;(){}])|(?<=[-+*/=])|\\\\s+");
+        return texto.split("(?=[-+*/=;(){}])|(?<=[-+*/=()])|\\s+");
     
     }
 }
