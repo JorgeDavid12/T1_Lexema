@@ -33,7 +33,7 @@ public class AnalisisLexcio{
                 System.out.println("Lexema: " + palabra + " -> Símbolo de agrupación");
             } else if(palabra.equals(";") || palabra.equals("{") || palabra.equals("}")){
                 System.out.println("Lexema: " + palabra + " -> Símbolo de especial");
-            } 
+            }
             else {
                 System.out.println("Lexema: " + palabra + " -> No reconocido");
             }
