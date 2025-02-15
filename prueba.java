@@ -72,16 +72,14 @@ public class prueba {
             }
 
             // Si es una palabra reservada, actualizamos el tipo o la visibilidad
-            if (palabra.equals("public") || palabra.equals("private")) {
+            if (palabra.equals("public") || palabra.equals("private") || palabra.equals("protected")) {
                 visibilidadActual = palabra;
-            } else if (palabra.equals("int") || palabra.equals("double") || palabra.equals("string") || palabra.equals("class")) {
+            } else if (palabra.equals("int") || palabra.equals("double") || palabra.equals("string") || palabra.equals("class")|| palabra.equals("static") || palabra.equals("float") || palabra.equals("boolean")) {
                 tipoActual = palabra;
             }
 
             // Si es un identificador, lo agregamos a la tabla
-            if (palabra.matches("[a-zA-Z][a-zA-Z0-9]*") && !palabra.equals("public") && 
-                !palabra.equals("private") && !palabra.equals("int") && !palabra.equals("double") && 
-                !palabra.equals("string") && !palabra.equals("class")) {
+            if (palabra.matches("[a-zA-Z][a-zA-Z0-9]*") && !palabra.equals("public") && !palabra.equals("private") && !palabra.equals("int") && !palabra.equals("double") && !palabra.equals("string") && !palabra.equals("class")&& !palabra.equals("float") && !palabra.equals("boolean") && !palabra.equals("protected")) {
                 // Creamos la fila de la tabla
                 String nombre = palabra;
                 String tipo = tipoActual;
