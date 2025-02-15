@@ -89,7 +89,7 @@ public class prueba {
                 String posicionStr = String.valueOf(posicion);
 
                 // Imprimimos la fila con formato alineado
-                System.out.println(String.format("%-10s | %-10s | %-10s | %-10s | %-10s | %-10s", nombre, tipo, ambito, visibilidad, tamano, posicionStr));
+                System.out.println(String.format("%-10s | %-10s | %-10s | %-11s | %-10s | %-20s", nombre, tipo, ambito, visibilidad, tamano, posicionStr));
 
                 posicion++; // Incrementamos la posición
             }
