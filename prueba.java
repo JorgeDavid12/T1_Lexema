@@ -7,7 +7,7 @@ public class prueba {
         Archivo archivo = new Archivo();
 
         // Leemos el archivo y obtenemos los lexemas
-        String[] lexemas = archivo.leerArchivoTxt("C:\\Users\\jdvil\\OneDrive\\Escritorio\\7. SEMESTRE\\COPILADORES\\MODULO 1\\codigotxt\\prueba.txt");
+        String[] lexemas = archivo.leerArchivoTxt("C:\\Users\\jdvil\\OneDrive\\Escritorio\\7. SEMESTRE\\COPILADORES\\MODULO 1\\codigotxt\\archivo.txt");
 
         // Imprimimos los lexemas encontrados
         System.out.println("Lexemas encontrados:");
@@ -74,12 +74,12 @@ public class prueba {
             // Si es una palabra reservada, actualizamos el tipo o la visibilidad
             if (palabra.equals("public") || palabra.equals("private") || palabra.equals("protected")) {
                 visibilidadActual = palabra;
-            } else if (palabra.equals("int") || palabra.equals("double") || palabra.equals("string") || palabra.equals("class")|| palabra.equals("static") || palabra.equals("float") || palabra.equals("boolean")) {
+            } else if (palabra.equals("int") || palabra.equals("double") || palabra.equals("String") || palabra.equals("class")|| palabra.equals("static") || palabra.equals("float") || palabra.equals("boolean")) {
                 tipoActual = palabra;
             }
 
             // Si es un identificador, lo agregamos a la tabla
-            if (palabra.matches("[a-zA-Z][a-zA-Z0-9]*") && !palabra.equals("public") && !palabra.equals("private") && !palabra.equals("int") && !palabra.equals("double") && !palabra.equals("string") && !palabra.equals("class")&& !palabra.equals("float") && !palabra.equals("boolean") && !palabra.equals("protected")) {
+            if (palabra.matches("[a-zA-Z][a-zA-Z0-9]*") && !palabra.equals("public") && !palabra.equals("private") && !palabra.equals("int") && !palabra.equals("double") && !palabra.equals("String") && !palabra.equals("class")&& !palabra.equals("float") && !palabra.equals("boolean") && !palabra.equals("protected") && !palabra.equals("static")) {
                 // Creamos la fila de la tabla
                 String nombre = palabra;
                 String tipo = tipoActual;
