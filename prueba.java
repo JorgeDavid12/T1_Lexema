@@ -7,7 +7,7 @@ public class prueba {
         Archivo archivo = new Archivo();
 
         // Leemos el archivo y obtenemos los lexemas
-        String[] lexemas = archivo.leerArchivoTxt("C:\\Users\\jdvil\\OneDrive\\Escritorio\\7. SEMESTRE\\COPILADORES\\MODULO 1\\codigotxt\\archivo.txt");
+        String[] lexemas = archivo.leerArchivoTxt("C:\\Users\\jdvil\\OneDrive\\Escritorio\\7. SEMESTRE\\COPILADORES\\MODULO 1\\codigotxt\\prueba.txt");
 
         // Imprimimos los lexemas encontrados
         System.out.println("Lexemas encontrados:");
@@ -28,8 +28,7 @@ public class prueba {
                 System.out.println("Lexema: [TABULADOR] -> Tabulador");
             } else if (palabra.equals(" ")) {
                 System.out.println("Lexema: [ESPACIO] -> Espacio en blanco");
-            } else if (palabra.equals("int") || palabra.equals("double") || palabra.equals("string") || 
-                    palabra.equals("public") || palabra.equals("private") || palabra.equals("class")) {
+            } else if (palabra.equals("int") || palabra.equals("double") || palabra.equals("string") || palabra.equals("public") || palabra.equals("private") || palabra.equals("class") || palabra.equals("float") || palabra.equals("boolean") || palabra.equals("protected")) {
                 System.out.println("Lexema: " + palabra + " -> Palabra reservada");
             } else if (palabra.equals("=")) {
                 System.out.println("Lexema: " + palabra + " -> Operador de asignación");
