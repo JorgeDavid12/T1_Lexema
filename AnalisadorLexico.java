@@ -1,7 +1,7 @@
 import java.io.*;
-import java.util.*;
+//import java.util.*;
 
-public class prueba {
+public class AnalisadorLexico {
     public static void main(String[] args) {
         // Instanciamos un objeto de la clase Archivo
         Archivo archivo = new Archivo();
