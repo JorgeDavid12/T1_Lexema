@@ -1,10 +1,9 @@
 import java.io.*;
-//import java.util.*;
 
 public class AnalisadorLexico {
     public static void main(String[] args) {
         // Instanciamos un objeto de la clase Archivo
-        Archivo archivo = new Archivo();
+        Scanner archivo = new Scanner();
 
         // Leemos el archivo y obtenemos los lexemas
         String[] lexemas = archivo.leerArchivoTxt("C:\\Users\\jdvil\\OneDrive\\Escritorio\\7. SEMESTRE\\COPILADORES\\MODULO 1\\codigotxt\\archivo.txt");
@@ -97,7 +96,7 @@ public class AnalisadorLexico {
     }
 }
 
-class Archivo {
+class Scanner {
     public String[] leerArchivoTxt(String direccion) {
         String texto = "";
 
