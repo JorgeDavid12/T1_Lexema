@@ -91,6 +91,8 @@ public class AnalisadorLexico {
                 System.out.println(String.format("%-10s | %-10s | %-10s | %-11s | %-10s | %-20s", nombre, tipo, ambito, visibilidad, tamano, posicionStr));
 
                 posicion++; // Incrementamos la posición
+                visibilidadActual = "";
+                tipoActual = "";
             }
         }
     }
